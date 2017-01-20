@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		EBB4E9801E31DEEC00FD0709 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4E97F1E31DEEC00FD0709 /* main.m */; };
 		EBB4E9831E31DEEC00FD0709 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4E9821E31DEEC00FD0709 /* AppDelegate.m */; };
-		EBB4E9861E31DEEC00FD0709 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4E9851E31DEEC00FD0709 /* ViewController.m */; };
 		EBB4E9891E31DEEC00FD0709 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB4E9871E31DEEC00FD0709 /* Main.storyboard */; };
 		EBB4E98B1E31DEEC00FD0709 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBB4E98A1E31DEEC00FD0709 /* Assets.xcassets */; };
 		EBB4E98E1E31DEEC00FD0709 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBB4E98C1E31DEEC00FD0709 /* LaunchScreen.storyboard */; };
 		EBB4E9991E31DEEC00FD0709 /* MVVMDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4E9981E31DEEC00FD0709 /* MVVMDemoTests.m */; };
 		EBB4E9A41E31DEEC00FD0709 /* MVVMDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4E9A31E31DEEC00FD0709 /* MVVMDemoUITests.m */; };
+		EBB4E9B41E31DF1C00FD0709 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4E9B31E31DF1C00FD0709 /* Person.m */; };
+		EBB4E9B71E31DF4C00FD0709 /* PersonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4E9B61E31DF4C00FD0709 /* PersonViewController.m */; };
+		EBB4E9BA1E31E05A00FD0709 /* PersonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EBB4E9B91E31E05A00FD0709 /* PersonViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		EBB4E97F1E31DEEC00FD0709 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EBB4E9811E31DEEC00FD0709 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EBB4E9821E31DEEC00FD0709 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EBB4E9841E31DEEC00FD0709 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EBB4E9851E31DEEC00FD0709 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EBB4E9881E31DEEC00FD0709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EBB4E98A1E31DEEC00FD0709 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBB4E98D1E31DEEC00FD0709 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,12 @@
 		EBB4E99F1E31DEEC00FD0709 /* MVVMDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBB4E9A31E31DEEC00FD0709 /* MVVMDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MVVMDemoUITests.m; sourceTree = "<group>"; };
 		EBB4E9A51E31DEEC00FD0709 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBB4E9B21E31DF1C00FD0709 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		EBB4E9B31E31DF1C00FD0709 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		EBB4E9B51E31DF4C00FD0709 /* PersonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewController.h; sourceTree = "<group>"; };
+		EBB4E9B61E31DF4C00FD0709 /* PersonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewController.m; sourceTree = "<group>"; };
+		EBB4E9B81E31E05A00FD0709 /* PersonViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonViewModel.h; sourceTree = "<group>"; };
+		EBB4E9B91E31E05A00FD0709 /* PersonViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,13 @@
 		EBB4E97D1E31DEEC00FD0709 /* MVVMDemo */ = {
 			isa = PBXGroup;
 			children = (
+				EBB4E9B11E31DEFC00FD0709 /* model */,
 				EBB4E9811E31DEEC00FD0709 /* AppDelegate.h */,
 				EBB4E9821E31DEEC00FD0709 /* AppDelegate.m */,
-				EBB4E9841E31DEEC00FD0709 /* ViewController.h */,
-				EBB4E9851E31DEEC00FD0709 /* ViewController.m */,
+				EBB4E9B51E31DF4C00FD0709 /* PersonViewController.h */,
+				EBB4E9B61E31DF4C00FD0709 /* PersonViewController.m */,
+				EBB4E9B81E31E05A00FD0709 /* PersonViewModel.h */,
+				EBB4E9B91E31E05A00FD0709 /* PersonViewModel.m */,
 				EBB4E9871E31DEEC00FD0709 /* Main.storyboard */,
 				EBB4E98A1E31DEEC00FD0709 /* Assets.xcassets */,
 				EBB4E98C1E31DEEC00FD0709 /* LaunchScreen.storyboard */,
@@ -138,6 +147,15 @@
 				EBB4E9A51E31DEEC00FD0709 /* Info.plist */,
 			);
 			path = MVVMDemoUITests;
+			sourceTree = "<group>";
+		};
+		EBB4E9B11E31DEFC00FD0709 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				EBB4E9B21E31DF1C00FD0709 /* Person.h */,
+				EBB4E9B31E31DF1C00FD0709 /* Person.m */,
+			);
+			path = model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +291,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EBB4E9861E31DEEC00FD0709 /* ViewController.m in Sources */,
+				EBB4E9BA1E31E05A00FD0709 /* PersonViewModel.m in Sources */,
 				EBB4E9831E31DEEC00FD0709 /* AppDelegate.m in Sources */,
+				EBB4E9B41E31DF1C00FD0709 /* Person.m in Sources */,
 				EBB4E9801E31DEEC00FD0709 /* main.m in Sources */,
+				EBB4E9B71E31DF4C00FD0709 /* PersonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

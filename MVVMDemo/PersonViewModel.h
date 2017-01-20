@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 @interface PersonViewModel : NSObject
+
+- (instancetype)initWithPerson:(Person *)person;
+
+@property (nonatomic, strong, readonly) Person *person;
+@property (nonatomic, copy, readonly) NSString *nameText;
+@property (nonatomic, copy, readonly) NSString *birthdateText;
 
 @end
