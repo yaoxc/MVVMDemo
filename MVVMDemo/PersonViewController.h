@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  PersonViewController.h
 //  MVVMDemo
 //
 //  Created by buoumall on 2017/1/20.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface PersonViewController : UIViewController
 
 @end
-
