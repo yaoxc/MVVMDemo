@@ -10,13 +10,17 @@
 #import "Person.h"
 #import "PersonViewModel.h"
 
-@interface PersonViewController ()
+@interface PersonViewController ()<UIScrollViewDelegate>
+{
+    NSArray *colors;
+}
 
 //@property (nonatomic, strong) Person *model;
 
 @property (nonatomic, strong) PersonViewModel *viewModel;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet UILabel *birthdateLabel;
+@property (nonatomic, assign) CGPoint preOffset;
 
 @end
 
@@ -24,6 +28,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    colors=@[[UIColor redColor],[UIColor blueColor],[UIColor orangeColor],[UIColor grayColor],[UIColor greenColor],[UIColor darkGrayColor],[UIColor orangeColor],[UIColor grayColor],[UIColor greenColor],[UIColor darkGrayColor]];
+    
 //    
 //    if (self.model.salutation.length > 0) {
 //        self.nameLabel.text = [NSString stringWithFormat:@"%@ %@ %@", self.model.salutation, self.model.firstName, self.model.lastName];
@@ -44,6 +50,34 @@
      */
     self.nameLabel.text = self.viewModel.nameText;
     self.birthdateLabel.text = self.viewModel.birthdateText;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 10;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell=[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    
+    [cell setBackgroundColor:colors[indexPath.row]];
+    return cell;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
+    CGPoint offset = scrollView.contentOffset;
+    CGFloat delta = offset.y - self.preOffset.y;
+    self.preOffset = offset;
+    
+    CGRect rect = self.navigationController.navigationBar.frame;
+    rect.origin.y += delta;
+    self.navigationController.navigationBar.frame = rect;
+    NSLog(@"%f --- %f",delta,rect.origin.y);
 }
 
 @end
